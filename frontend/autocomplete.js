@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // Lista pól tekstowych z odpowiednimi adresami URL backendu i dodatkowymi opcjami
+    
     var fields = [
         { id: "#textfield1", url: "backend/backend1.php", minLength: 1, onSelect: logLabel },
         { id: "#textfield2", url: "backend/backend2.php", minLength: 1, onSelect: redirectToUrl },
@@ -13,7 +13,7 @@ $(document).ready(function() {
         { id: "#textfield10", url: "backend/backend10.php", minLength: 3, onSelect: logLabel }
     ];
 
-    // Funkcja wspólna dla wszystkich pól tekstowych
+    
     fields.forEach(function(field) {
         $(field.id).autocomplete({
             source: function(request, response) {
@@ -40,7 +40,7 @@ $(document).ready(function() {
         });
     });
 
-    // Funkcje pomocnicze dla różnych zachowań onSelect
+    
     function logLabel(item) {
         console.log("chosen: " + item.label);
     }
