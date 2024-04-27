@@ -31,7 +31,17 @@ This AJAX Autocomplete system enhances user experience in text input forms by of
 ### Configuration
 - **Data Source Configuration**: Modify the AJAX URLs in `autocomplete.js` to match the endpoints of your backend PHP scripts.
 - **UI Customization**: Adjust CSS styles linked within `index.html` to tailor the autocomplete dropdown's appearance.
-Sure, here's a clear message that you can include in your GitHub documentation to inform users that simply downloading the files and running `index.html` will not suffice, and that a web server with PHP support is necessary:
+Certainly! Here's an explanation in English about what the "backend*.php" files are responsible for in your AJAX Autocomplete system:
+
+## Understanding the Role of "backend*.php" Files
+
+The "backend*.php" files in the AJAX Autocomplete system play a critical role in processing user inputs and providing data for autocomplete suggestions. Each of these files is designed to handle specific types of data or functionalities related to the autocomplete feature. Here’s a breakdown of their typical responsibilities:
+
+### General Functions
+- **Data Retrieval**: Each file connects to a data source (which can be a database or a hardcoded list of data within the PHP file itself) and retrieves data based on the user input received via AJAX requests from the frontend.
+- **Data Filtering**: The scripts filter the retrieved data to match the partial inputs provided by the users, ensuring that only relevant suggestions are returned.
+- **Response Formatting**: The data is formatted into JSON (JavaScript Object Notation), which is then returned to the frontend script (`autocomplete.js`). This JSON format makes it easy for the frontend to parse the data and display it as autocomplete suggestions.
+
 
 ## Important: Server Requirements
 
