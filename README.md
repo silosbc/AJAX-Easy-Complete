@@ -42,6 +42,15 @@ The "backend*.php" files in the AJAX Autocomplete system play a critical role in
 - **Data Filtering**: The scripts filter the retrieved data to match the partial inputs provided by the users, ensuring that only relevant suggestions are returned.
 - **Response Formatting**: The data is formatted into JSON (JavaScript Object Notation), which is then returned to the frontend script (`autocomplete.js`). This JSON format makes it easy for the frontend to parse the data and display it as autocomplete suggestions.
 
+## Feature Highlights: Keyword Handling Modes
+
+This script offers two modes to accommodate different user input handling strategies for the autocomplete functionality:
+
+1. **Non-breaking Keyword Mode**: In this mode, the script processes the entire input as a single, continuous string. Autocomplete suggestions are generated based on this whole input, making it suitable for scenarios where the complete phrase's integrity is important, such as searching for specific names or phrases.
+
+2. **Keyword Breaking Mode**: This mode allows the script to break the user's input into separate keywords. It then ensures that the returned suggestions contain **all** of these keywords, not just any part of them. This method is particularly effective for more comprehensive searches where the user inputs multiple distinct keywords, and the goal is to find entries that include all specified keywords, enhancing the relevance of the search results.
+
+These modes are designed to provide flexibility and precision in how search inputs are handled, making the autocomplete system adaptable to various search requirements and user preferences.
 
 ## Important: Server Requirements
 
