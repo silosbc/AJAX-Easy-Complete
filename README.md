@@ -31,7 +31,6 @@ This AJAX Autocomplete system enhances user experience in text input forms by of
 ### Configuration
 - **Data Source Configuration**: Modify the AJAX URLs in `autocomplete.js` to match the endpoints of your backend PHP scripts.
 - **UI Customization**: Adjust CSS styles linked within `index.html` to tailor the autocomplete dropdown's appearance.
-Certainly! Here's an explanation in English about what the "backend*.php" files are responsible for in your AJAX Autocomplete system:
 
 ## Understanding the Role of "backend*.php" Files
 
